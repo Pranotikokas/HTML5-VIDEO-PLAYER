@@ -1,0 +1,99 @@
+/*
+darkgrey: rgb(30, 30, 30);
+lightgrey: rgb(70, 70, 70);
+lightblue: rgb(50, 170, 220);
+
+*/
+
+#player{
+  background: rgb(30, 30, 30);
+  display: inline-block;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+img{
+  background-color: rgb(70, 70, 70);
+}
+
+img:hover{
+  background-color: rgb(50, 170, 220);
+}
+
+img, #pbar-container, #sbar-container{
+  cursor: pointer;
+}
+
+
+#video-container{
+  width: 640px;
+  height: 360px;
+  position: relative;
+}
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  #screen{
+    height: 100%;
+    width: 100%;
+    line-height: 360px;
+    text-align: center;
+    position: absolute;
+    z-index: 1 !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,1c1c1c+100&0.65+0,0.93+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.65) 0%, rgba(28,28,28,0.93) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.65) 0%,rgba(28,28,28,0.93) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.65) 0%,rgba(28,28,28,0.93) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', endColorstr='#ed1c1c1c',GradientType=0 ); /* IE6-9 */
+
+  }
+    #screen img{
+      vertical-align: middle;
+    }
+
+
+
+#pbar-container{
+  margin-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgb(70, 70, 70);
+}
+  #pbar{
+    height:5px;
+    width: 0%;
+    background-color: rgb(50, 170, 220);
+  }
+#buttons-container{
+  height:50px;
+}
+  #buttons-container > * {
+    display: inline-block;
+    height: 100%;
+    margin: 0 10px;
+    vertical-align: middle;
+
+  }
+  #time-field{
+    color:rgb(50, 170, 220);
+    line-height: 50px;
+    cursor: default;
+  }
+  #sound-button{
+    margin-right: 0;
+  }
+  #sbar-container{
+    margin-left: 0;
+    width: 100px ;
+    height: 5px ;
+    background-color: rgb(70, 70, 70);
+  }
+    #sbar{
+      height: 100%;
+      width: 100%;
+      background-color: rgb(50, 170, 220);
+    }
+  #fullscreen-button{
+    float: right;
+  }
